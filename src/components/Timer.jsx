@@ -5,10 +5,10 @@ export const Timer = (props) => {
     const idClass = props.label.toLowerCase().replace(' ', '-');
     
     useEffect(() => {
-      
-        console.log('render', {idClass})
+
         const $counterValue = document.querySelector(`.countdown__counter--${idClass} .countdown__counter__value`);
         $counterValue.classList.add('flip');
+        
         setTimeout(() => {
             $counterValue.classList.remove('flip');
         }, 750)
