@@ -199,3 +199,9 @@ body {
 .attribution a { 
   color: var(--attribution-blue); 
 }
+
+@media (min-width: 1440px) {
+  .countdown__counter__value {
+    --padding-x: 1rem;
+  }
+}
